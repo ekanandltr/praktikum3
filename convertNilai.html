@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title>Konversi Nilai Angka Menjadi Huruf</title>
+	</head>
+	<style type="text/css">
+		body {background-color: skyblue}
+		h1 {background: rgb(240, 248, 255)}
+	</style>
+	<script language="Javascript">
+		
+		function convert() {
+			var nilai = document.kirim.T1.value
+			if (nilai<=40 ) {
+				document.kirim.T2.value="E"
+			} else if(nilai <=55) {
+				kirim.T2.value="D"
+			} else if(nilai <=60) {
+				kirim.T2.value="C"
+			} else if (nilai <=65) {
+				kirim.T2.value="BC"
+			} else if (nilai <= 70) {
+				kirim.T2.value="B"
+			} else if (nilai <= 80) {
+				kirim.T2.value="AB"
+			} else if (nilai <= 100){
+				kirim.T2.value="A"
+			} else {
+				kirim.T2.value="Masukan Nilai Angka! "
+			}
+		}
+	</script>
+	<body>
+		<center>
+		<form method="POST" name="kirim">
+			<h1>KONVERSI NILAI</h1><br>
+			<p>Nilai Angka: <input type="text" name="T1" size="20"></p>
+
+			<p><input type="button" name="B1" value="Convert" onclick=convert()></p>
+
+			<p>Nilai Huruf: <input type="text" name="T2" size="20"></p>
+		</form>
+	</center>
+	</body>
+</html>

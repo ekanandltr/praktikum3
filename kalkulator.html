@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<title>Kalkulator</title>
+	</head>	
+	<style type="text/css">
+		body {background-color: lightsalmon}
+		h1 {background: lightgrey}
+	</style>
+	<script language="Javascript">
+		
+		function tambah () {
+			var a = parseFloat(document.form.bil1.value) 
+			var b = parseFloat(document.form.bil2.value)
+			var hasil = a+b
+			document.form.result.value = hasil
+			if(isNaN(a) == false && isNaN(b) == false){
+			} else {
+				alert("Inputan Harus Berupa Angka !")
+			}
+		}
+	
+
+		function kurang() {
+			var a = parseFloat(document.form.bil1.value) 
+			var b = parseFloat(document.form.bil2.value)
+			var hasil = a-b
+			document.form.result.value = hasil	
+			if(isNaN(a) == false && isNaN(b) == false){
+			} else {
+				alert("Inputan Harus Berupa Angka !")
+			}
+		}
+
+		function kali() {
+			var a = parseFloat(document.form.bil1.value) 
+			var b = parseFloat(document.form.bil2.value)
+			var hasil = a*b
+			document.form.result.value = hasil
+			if(isNaN(a) == false && isNaN(b) == false){
+			} else {
+				alert("Inputan Harus Berupa Angka !")
+			}
+		}
+	
+
+		function bagi() {
+			var a = parseFloat(document.form.bil1.value) 
+			var b = parseFloat(document.form.bil2.value)
+				var hasil = a/b
+			document.form.result.value = hasil	
+			if(isNaN(a) == false && isNaN(b) == false){
+			} else {
+				alert("Inputan Harus Berupa Angka !")
+			}	
+		}
+	
+	</script>
+	<body>
+
+	<center>
+		<form method="POST" name="form">
+		
+		<h1>KALKULATOR</h1><br>
+		<table>
+		<tr><td>Bilangan 1 </td><td><input type="text" name="bil1"></td></tr>
+		<tr><td>Bilangan 2 </td><td><input type="text" name="bil2"></td></tr>
+		<tr><td colspan="3" align="center">
+		<input type="button" value="+" onclick= tambah()>
+		<input type="button" value="-" onclick= kurang()>
+		<input type="button" value="*" onclick= kali()>
+		<input type="button" value="/" onclick= bagi()>
+		</td></tr>
+		<tr><td>Hasil </td><td><input type="text" name="result"></td></tr></table>
+		</form>
+	</center>
+	
+	</body>
+</html>
